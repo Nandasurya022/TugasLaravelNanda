@@ -53,7 +53,7 @@
             <label><strong>Jenis Kelamin :</strong></label>
             <p><input class="me-1" type='radio' name='jeniskelamin' id="jeniskelamin" value='Laki - Laki'>Laki-Laki</p>
             <p><input class="me-1" type='radio' name='jeniskelamin' id="jeniskelamin" value='Perempuan'>Perempuan</p>
-            <p><input class="me-1" type='radio' name='jeniskelamin' id="jeniskelamin" value='Tidak ingin Memberi Tahu'>Lainnya</p>
+            <p><input class="me-1" type='radio' name='jeniskelamin' id="jeniskelamin" value='Tidak ingin Memberitahu'>Tidak ingin Memberitahu</p>
         </div>
         <div class="form-group mb-3">
             <label><strong>Fakultas :</strong></label>

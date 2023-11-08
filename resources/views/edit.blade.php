@@ -50,7 +50,7 @@
             <label><strong>Jenis Kelamin :</strong></label>
             <p><input class="me-1" type='radio' name='jeniskelamin' id="jeniskelamin" value='Laki - Laki' @if ($mahasiswa->jeniskelamin=='Laki - Laki'){{ "checked" }} @endif >Laki-Laki</p>
             <p><input class="me-1" type='radio' name='jeniskelamin' id="jeniskelamin" value='Perempuan' @if ($mahasiswa->jeniskelamin=='Perempuan'){{ "checked" }} @endif >Perempuan</p>
-            <p><input class="me-1" type='radio' name='jeniskelamin' id="jeniskelamin" value='Tidak ingin Memberi Tahu' @if ($mahasiswa->jeniskelamin=='Tidak Ingin Memberi Tahu'){{ "checked" }} @endif>Lainnya</p>
+            <p><input class="me-1" type='radio' name='jeniskelamin' id="jeniskelamin" value='Tidak ingin Memberitahu' @if ($mahasiswa->jeniskelamin=='Tidak ingin Memberitahu'){{ "checked" }} @endif>Tidak ingin Memberitahu</p>
         </div>
         <div class="form-group mb-3">
             <label><strong>Fakultas :</strong></label>

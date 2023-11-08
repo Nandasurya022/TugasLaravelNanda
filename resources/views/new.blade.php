@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tugas Laravel Form Biodata</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
@@ -11,87 +10,31 @@
         body {
             background-color: #007bff; /* Kode warna untuk biru (blue) */
             color: #fff; /* Warna teks putih */
-            font-family: 'Arial Black', sans-serif; /* Ganti font ke Arial Black atau sans-serif */
+            font-family: 'Book Antiqua', sans-serif; /* Ganti font ke Book Antiqua atau sans-serif */
         }
 
-        /* Ganti warna background tombol submit menjadi hijau */
-        .btn-primary {
-            background-color: #007bff; /* Kode warna untuk hijau (green) */
+        /* Gaya CSS untuk mengatur posisi form input ke kiri */
+        .form-container {
+            max-width: 500px; /* Lebar maksimal form */
+            margin: 0 auto; /* Pusatkan form dalam container */
         }
 
-        /* Gaya CSS untuk mengatur posisi tombol submit ke kiri */
-        .left-align {
+        /* Gaya CSS untuk mengatur label dan input ke kiri */
+        .form-group {
             text-align: left;
+        }
+
+        /* Gaya CSS untuk mengatur judul berada di tengah-tengah */
+        .form-title {
+            text-align: center;
         }
     </style>
 </head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* CSS for the Header */
-    #header {
-      background-color: #98FB98; /* Warna latar belakang hijau (#00ff00) */
-      color: #fff; /* Warna teks header (putih) */
-      padding: 20px 0; /* Padding atas dan bawah header */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan (shadow) pada header */
-    }
-
-    #header .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    #header .logo {
-      font-size: 24px; /* Ukuran font logo */
-      font-weight: 600; /* Ketebalan font logo */
-      text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
-    }
-
-    #header nav ul {
-      list-style: none; /* Menghapus tanda bullet pada daftar menu */
-      margin: 0;
-      padding: 0;
-      display: flex; /* Mengatur menu dalam satu baris */
-    }
-
-    #header nav ul li {
-      margin-right: 20px; /* Margin antara menu */
-    }
-
-    #header nav a {
-      text-decoration: none; /* Menghapus dekorasi tautan (underline) */
-      color: #000000; /* Warna teks menu (putih) */
-      transition: color 0.3s; /* Efek transisi ketika warna teks menu berubah */
-    }
-
-    #header nav a:hover {
-      color: #007bff; /* Warna teks menu saat dihover (biru) */
-    }
-  </style>
-  <title>Your Website</title>
-</head>
 <body>
-  <header id="header">
-    <div class="container">
-      <div class="logo"><a href="/">Nanda Surya</a></div>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/mahasiswa">Tugas</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-<body>
-<div class="container mx-auto" style="max-width: 500px;">
-    <h1 class="text-center mb-2">Selamat Datang Di Tugas Prognet Nanda</h1>
-    <h2 class="text-center mb-2">Form Biodata Mahasiswa</h2>
-    <h5 class="text-center mb-2">Silahkan Isi Data Anda Dengan Benar</h5>
+<div class="container mx-auto form-container">
+    <h1 class="form-title">Selamat Datang Di Tugas Prognet Nanda</h1>
+    <h2 class="form-title">Form Biodata Mahasiswa</h2>
+    <h5 class="form-title">Silahkan Isi Data Anda Dengan Benar</h5>
     <form name="formBiodata" action="/mahasiswa" method="post" onsubmit="return validateForm()">
         @csrf
         <div class="form-group mb-3">
@@ -122,7 +65,7 @@
                 <option value="Fakultas Hukum">Fakultas Hukum</option>
                 <option value="Fakultas Pertanian">Fakultas Pertanian</option>
                 <option value="Fakultas Peternakan">Fakultas Peternakan</option>
-                <option value="Fakultas Matematikan dan Ilmu Pengetahuan Alam">S1 Fakultas Matematikan dan Ilmu Pengetahuan Alam</option>
+                <option value="Fakultas Matematikan dan Ilmu Pengetahuan Alam">S1 Fakultas Matematika dan Ilmu Pengetahuan Alam</option>
             </select>
         </div>
         <div class="form-group mb-3">
@@ -164,9 +107,8 @@
             <input type="text" name="hobi" id="hobi" class="form-control" placeholder="Hobi">
         </div>
         <div class="left-align">
-    <button type="submit" name="submit" class="btn btn-primary mb-4" style="background-color: green; color: white;">Submit</button>
-</div>
-
+            <button type="submit" name="submit" class="btn btn-primary mb-4" style="background-color: green; color: white;">Submit</button>
+        </div>
     </form>
 </div>
 <script>

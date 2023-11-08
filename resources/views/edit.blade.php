@@ -11,7 +11,7 @@
         body {
             background-color: #007bff; /* Kode warna untuk biru (blue) */
             color: #fff; /* Warna teks putih */
-            font-family: 'Arial Black', sans-serif; /* Ganti font ke Arial Black atau sans-serif */
+            font-family: 'Book Antiqua', sans-serif; /* Ganti font ke Arial Black atau sans-serif */
         }
 
         /* Ganti warna background tombol submit menjadi hijau */

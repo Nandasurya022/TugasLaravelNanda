@@ -79,8 +79,7 @@
             <p>Kelas: A</p>
             <p>Jenis Kelamin: Laki-Laki</p>
             <p>Alamat: Padangbai, Manggis, Karangasem</p>
-            <p class="mb-0"><a href="/about" class="btn btn-success py-3 px-5">About me</a></p>
-          </blockquote>
+            <p class="mb-0"><a href="/about" class="btn btn-success py-3 px-5" style="background-color: #008000;">About me</a></p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
           </div>
 
